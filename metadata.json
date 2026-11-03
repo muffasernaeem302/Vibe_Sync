@@ -1,0 +1,6 @@
+{
+  "name": "VibeSync",
+  "description": "Deterministic mood categorization and smart playlist synchronization for Spotify liked tracks.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

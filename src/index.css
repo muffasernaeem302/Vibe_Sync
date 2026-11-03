@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #09090b;
+    color: #f4f4f5;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom sleek scrollbar for mood columns and dashboard */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(24, 24, 27, 0.6);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(63, 63, 70, 0.7);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(113, 113, 122, 0.9);
+}
+
+/* Pulse glow animation for Spotify brand accent */
+@keyframes neonPulse {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(29, 185, 84, 0.25), 0 0 30px rgba(29, 185, 84, 0.1);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(29, 185, 84, 0.45), 0 0 50px rgba(29, 185, 84, 0.2);
+  }
+}
+
+.spotify-glow {
+  animation: neonPulse 3s ease-in-out infinite;
+}
